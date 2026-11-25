@@ -1,0 +1,41 @@
+LIGHT THEME
+  Body text on page background               #2E1065 on #F5F3FF  13.89 : 1  need 4.5  OK
+  Body text on cards                         #2E1065 on #FFFFFF  15.24 : 1  need 4.5  OK
+  Muted text on page background              #475569 on #F5F3FF   6.91 : 1  need 4.5  OK
+  Muted text on cards                        #475569 on #FFFFFF   7.58 : 1  need 4.5  OK
+  Button text on brand color                 #FFFFFF on #6D28D9   7.10 : 1  need 4.5  OK
+  Links on cards                             #0369A1 on #FFFFFF   5.93 : 1  need 4.5  OK
+  Links on page background                   #0369A1 on #F5F3FF   5.41 : 1  need 4.5  OK
+  Accent text (balance owed) on cards        #C2410C on #FFFFFF   5.18 : 1  need 4.5  OK
+  Accent text on page background             #C2410C on #F5F3FF   4.72 : 1  need 4.5  OK
+  Error text on cards                        #B91C1C on #FFFFFF   6.47 : 1  need 4.5  OK
+  Error message text on its box              #B91C1C on #FEE2E2   5.30 : 1  need 4.5  OK
+  Success message text on its box            #166534 on #DCFCE7   6.49 : 1  need 4.5  OK
+  Received badge                             #0C4A6E on #E0F2FE   8.24 : 1  need 4.5  OK
+  Finished badge                             #92400E on #FEF3C7   6.37 : 1  need 4.5  OK
+  Collected badge                            #166534 on #DCFCE7   6.49 : 1  need 4.5  OK
+  Cancelled badge                            #991B1B on #FEE2E2   6.80 : 1  need 4.5  OK
+  Field border on cards (3:1)                #7C6AB0 on #FFFFFF   4.62 : 1  need 3.0  OK
+  Field border on page background (3:1)      #7C6AB0 on #F5F3FF   4.21 : 1  need 3.0  OK
+
+DARK THEME
+  Body text on page background               #F1EBFF on #17112B  15.69 : 1  need 4.5  OK
+  Body text on cards                         #F1EBFF on #201838  14.46 : 1  need 4.5  OK
+  Muted text on page background              #B9B0D6 on #17112B   8.90 : 1  need 4.5  OK
+  Muted text on cards                        #B9B0D6 on #201838   8.20 : 1  need 4.5  OK
+  Button text on brand color                 #17112B on #A78BFA   6.70 : 1  need 4.5  OK
+  Links on cards                             #7DD3FC on #201838  10.08 : 1  need 4.5  OK
+  Links on page background                   #7DD3FC on #17112B  10.94 : 1  need 4.5  OK
+  Accent text (balance owed) on cards        #FDBA74 on #201838   9.97 : 1  need 4.5  OK
+  Accent text on page background             #FDBA74 on #17112B  10.81 : 1  need 4.5  OK
+  Error text on cards                        #FCA5A5 on #201838   8.86 : 1  need 4.5  OK
+  Error message text on its box              #FCA5A5 on #3F1414   8.37 : 1  need 4.5  OK
+  Success message text on its box            #86EFAC on #0F3320   9.87 : 1  need 4.5  OK
+  Received badge                             #7DD3FC on #0C2D44   8.54 : 1  need 4.5  OK
+  Finished badge                             #FCD34D on #3B2A07   9.58 : 1  need 4.5  OK
+  Collected badge                            #86EFAC on #0F3320   9.87 : 1  need 4.5  OK
+  Cancelled badge                            #FCA5A5 on #3F1414   8.37 : 1  need 4.5  OK
+  Field border on cards (3:1)                #8E7CC8 on #201838   4.70 : 1  need 3.0  OK
+  Field border on page background (3:1)      #8E7CC8 on #17112B   5.10 : 1  need 3.0  OK
+
+All pairs pass.

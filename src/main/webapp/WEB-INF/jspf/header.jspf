@@ -1,0 +1,51 @@
+<c:set var="ctx" value="${pageContext.request.contextPath}"/>
+<c:set var="me" value="${sessionScope.user}"/>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><c:out value="${title}"/> | Laundry Desk</title>
+<link rel="icon" type="image/svg+xml" href="${ctx}/images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&amp;family=Atkinson+Hyperlegible:wght@400;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="${ctx}/css/app.css">
+<script src="${ctx}/js/theme.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="${ctx}/index.jsp"><img src="${ctx}/images/favicon.svg" alt="">Laundry Desk</a>
+    <nav class="menu" aria-label="Main">
+      <a href="${ctx}/index.jsp" ${nav == 'home' ? 'aria-current="page"' : ''}>Home</a>
+      <a href="${ctx}/services.jsp" ${nav == 'services' ? 'aria-current="page"' : ''}>Price list</a>
+      <c:if test="${me.role == 'staff'}">
+        <a href="${ctx}/customers.jsp" ${nav == 'customers' ? 'aria-current="page"' : ''}>Customers</a>
+        <a href="${ctx}/bills.jsp" ${nav == 'bills' ? 'aria-current="page"' : ''}>Bills</a>
+        <a href="${ctx}/bill-new.jsp" ${nav == 'bill-new' ? 'aria-current="page"' : ''}>New bill</a>
+      </c:if>
+      <c:if test="${me.role == 'customer'}">
+        <a href="${ctx}/my-bills.jsp" ${nav == 'my-bills' ? 'aria-current="page"' : ''}>My bills</a>
+      </c:if>
+    </nav>
+    <div class="account">
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch the color theme">&#9790;</button>
+      <c:choose>
+        <c:when test="${not empty me}">
+          <span class="who"><c:out value="${me.name}"/></span>
+          <form method="post" action="${ctx}/logout.jsp"><ld:csrf/><button type="submit" class="btn btn-ghost btn-small">Logout</button></form>
+        </c:when>
+        <c:otherwise>
+          <a class="btn btn-ghost btn-small" href="${ctx}/login.jsp">Login</a>
+          <a class="btn btn-small" href="${ctx}/register.jsp">Register</a>
+        </c:otherwise>
+      </c:choose>
+    </div>
+  </div>
+</header>
+<main id="main" class="wrap content">
+<c:if test="${not empty flash_msg}">
+  <div class="flash ${flash_type == 'ok' ? 'flash-ok' : 'flash-error'}" role="status"><c:out value="${flash_msg}"/></div>
+</c:if>

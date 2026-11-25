@@ -1,0 +1,9 @@
+</main>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>Laundry Desk, Surabaya &middot; <a href="${ctx}/schema.jsp">Data model</a></span>
+    <span>Photos from Unsplash: Yuncho, Mathias Reding, Victor Volkov</span>
+  </div>
+</footer>
+</body>
+</html>
