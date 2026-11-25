@@ -35,7 +35,7 @@ docker run --rm -p 8080:8080 laundry-desk
 
 Open http ://localhost:8080
 
-Open Live : https://laundry-desk-lk03.onrender.com/
+Open Live : [https://laundry-desk-lk03.onrender.com/](https://quiz2-pemrogaman-web-laundry-desk.onrender.com/)
 
 ## Run the checks
 
