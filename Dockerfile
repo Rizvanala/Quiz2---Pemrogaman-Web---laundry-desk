@@ -1,7 +1,7 @@
 FROM maven:3.9-eclipse-temurin-21 AS build
 WORKDIR /app
 COPY . .
-RUN for i in 1 2 3 4 5 6; do mvn -B -q package -DskipTests && break; echo "Maven failed, retry $i"; sleep 20; done; test -f target/ROOT.war
+RUN for i in 1 2 3 4 5 6; do mvn -B -q -s settings.xml package -DskipTests && break; echo "Maven failed, retry $i"; sleep 20; done; test -f target/ROOT.war
 
 FROM tomcat:10.1-jre21
 RUN rm -rf /usr/local/tomcat/webapps/*
